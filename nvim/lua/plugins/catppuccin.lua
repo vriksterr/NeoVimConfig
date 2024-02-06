@@ -91,6 +91,7 @@ return {
               ["@function"] = { link = "TSFunction" },
               ["@lsp.typemod.function.defaultLibrary.cpp"] = { link = "TSFunction" },
               ["@lsp.typemod.method.defaultLibrary.cpp"] = { link = "TSFunction" },
+              ["@lsp.typemod.function.globalScope.cpp"] = { link = "TSFunction" }, --for all the normal functions
 
 
               ["@operator"] = { link = "TSOperator" },
