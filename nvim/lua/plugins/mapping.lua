@@ -12,8 +12,7 @@ return{
         --copy and paste from and to neovim from system clipboard
         --https://www.reddit.com/r/neovim/comments/13zrqcs/how_do_you_copypaste_stuff_fromto_vim/
         --vim.keymap.set({'n', 'v'}, '<C-y>', '"+y'), -- yank motion this only sets an alternative not overrides the original one use bottom one to override
-        vim.api.nvim_set_keymap('i', 'y', '<Nop>', { noremap = true, silent = true }),      --This disables the default copy command
-        vim.api.nvim_set_keymap('n', 'y', '<Nop>', { noremap = true, silent = true }),
+        vim.api.nvim_set_keymap('n', 'y', '<Nop>', { noremap = true, silent = true }),  --This disables the default copy command
         vim.api.nvim_set_keymap('v', 'y', '<Nop>', { noremap = true, silent = true }),
         vim.api.nvim_set_keymap('v', 'd', '<Nop>', { noremap = true, silent = true }),
         vim.api.nvim_set_keymap('i', '<C-c>', '"+y', { noremap = true, silent = true }),
@@ -21,8 +20,7 @@ return{
         vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true }),
         vim.api.nvim_set_keymap('v', '<C-x>', '"+d', { noremap = true, silent = true }),      --cut
 
-        vim.api.nvim_set_keymap('i', 'p', '<Nop>', { noremap = true, silent = true }),      --This disables the default paste command
-        vim.api.nvim_set_keymap('n', 'p', '<Nop>', { noremap = true, silent = true }),
+        vim.api.nvim_set_keymap('n', 'p', '<Nop>', { noremap = true, silent = true }),  --This disables the default paste command
         vim.api.nvim_set_keymap('v', 'p', '<Nop>', { noremap = true, silent = true }),  
         vim.api.nvim_set_keymap('i', '<C-v>', '"+p', { noremap = true, silent = true }),
         vim.api.nvim_set_keymap('n', '<C-v>', '"+p', { noremap = true, silent = true }),
